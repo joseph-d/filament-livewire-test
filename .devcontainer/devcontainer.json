@@ -1,0 +1,29 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Filament Livewire Test",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "filamentLivewireTest",
+	"workspaceFolder": "/var/www/html",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+                "shufo.vscode-blade-formatter",
+                "onecentlin.laravel-blade",
+                "bmewburn.vscode-intelephense-client",
+                "bradlc.vscode-tailwindcss",
+				"mikestead.dotenv",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"ryannaddy.laravel-artisan",
+				"onecentlin.laravel5-snippets"
+			],
+			"settings": {}
+		}
+	},
+	"remoteUser": "sail",
+	"postCreateCommand": "chown -R 1000:1000 /var/www/html 2>/dev/null || true"
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
+}
