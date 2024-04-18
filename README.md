@@ -17,12 +17,17 @@ There is just one file of tests at `tests/Feature/PostTest.php` divided into 2 s
 ## Testing on ViewJob::class
  
 ✓ it renders the LivewireTest::class component on resource view
+
 ⨯ it has a delete action
+
 ⨯ it triggers modal when delete button pressed
+
 ⨯ it redirects when modal action
 
 ## Testing on LivewireTest::class directly
 
 ✓ it has a delete action
+
 ✓ it triggers modal when delete button pressed
+
 ✓ it redirects when modal action confirmed
